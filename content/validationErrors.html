@@ -1,0 +1,276 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>WEDC Data Model</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<meta name="description" content="Contents of WEDC published to HTML">
+<link href="WebPublish.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Home Page</a></td><td class="NavBarMainHighlight">Validation Errors</td>
+</tr>
+</table>
+</td><td class="NavBarRight">WEDI Interface</td>
+</tr>
+</table>
+<hr>
+<p></p>
+
+<h3> Validation Errors</h3>      
+  This page will provide explanation and fixes for most commonly found Validation errors 
+    
+<h4> What are Schema Errors? How do they occur?</h4>    
+ Schema errors occur due to incorrect file layout
+    Most commonly found file format errors are <br>
+    <table><tr>
+        <td>1) Headers have Spelling issues - Headers have to exactly match how its displayed in the File Spec  </td></tr>
+        <tr><td>2) Incorrect column order - The Order of columns should be as listed in the file spec. Any deviation will generate an error</td></tr>
+        <tr> <td> 3)Extra Double Quotes - If data itself may have double quotes, they need to be escaped or removed before providing the data, otherwise the layout of the file will be compromised</td> </tr>
+        <tr><td> 4)Incorrect Data Formats - ALL Dates must be converted to character strings. Date formats for each date-related attribute are indicated in the data dictionary and it should be in format of YYYY-MM-DD
+            </td></tr>
+       <tr> <td>5)Incorrect Time formats - Time must be in 24 hour format (HH:MM)
+       </td>
+           <tr> <td>5)Incorrect Data Type - Mismatch found for Type, Format, Nullability of a column. Eg: if a required field like Person_id is passed as a null value. This will be a cause for rejection of the file
+       </td>
+        </tr></table>
+  
+   <h4> What are data integrity errors?</h4>    
+ Data Integrity occurs primarily due to these issues  <br>
+    <table><tr>
+        <td>1) Refrential Integrity Issue - If an uploaded file has Id which is dependent on a master file for look up  eg: STG_SIH_CLASSENROL_ATTEN.STUDENT_ID should be existing in STG_SIH_PERSON.PERSON_ID </td></tr>
+        <tr><td>2) Primary key duplicates - When a rule (one or more combination of columns) for uniqueness is broken  </td></tr>
+        </table> 
+   
+   <h4>List of Refrential Integrity Errors </h4> 
+    <table  border="1">
+        <tbody>
+            <tr style="background-color: darkgray">
+                <td>TABLE</td>
+                <td>REFRENTIAL ERROR</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_PERSON</td>
+                <td>PERSON_ID IS NOT PRESENT IN STG_SIH_PERSON<span>&nbsp;</span></td>
+            </tr>
+            <tr>
+                <td>STG_SIH_PERSON</td>
+                <td>PERSON_ID IS NOT PRESENT IN STG_SIH_PERSON<span>&nbsp;</span></td>
+            </tr>
+            <tr>
+                <td>STG_SIH_PERSON</td>
+                <td>PERSON_ID  IS NOT PRESENT IN STG_SIH_PERSON<span>&nbsp;</span></td>
+            </tr>
+            <tr>
+                <td>STG_SIH_PERSON</td>
+                <td>PERSON_ID IS NOT PRESENT IN STG_SIH_PERSON<span>&nbsp;</span></td>
+            </tr>
+            <tr>
+                <td>STG_SIH_PERSON</td>
+                <td>PERSON_ID IS NOT PRESENT IN STG_SIH_PERSON<span>&nbsp;</span></td>
+            </tr>
+            <tr>
+                <td>STG_SIH_PERSON</td>
+                <td>PERSON_ID IS NOT PRESENT IN STG_SIH_PERSON<span>&nbsp;</span></td>
+            </tr>
+            <tr>
+                <td>STG_SIH_PERSON</td>
+                <td>PERSON_ID IS NOT PRESENT IN STG_SIH_PERSON<span>&nbsp;</span></td>
+            </tr>
+            <tr>
+                <td>SIHSCHOOLCALENDAR</td>
+                <td>CLASS_DATE NOT PRESENT IN FULL DATE COLUMN IN SCHOOLCALENDAR</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_COURSE</td>
+                <td>COURSE_ID IS NOT PRESENT IN STG_SIH_COURSE table and file</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_ORGPERSONROLE</td>
+                <td>SCHOOLNUM IS NOT PRESENT IN ORGANIZATION_ID IN STG_SIH_ORGPERSONROLE FILE
+                    or TABLE</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_ORGPERSONROLE</td>
+                <td>STUDENT_ID, SCHOOLNUM IS NOT PRESENT IN STG_SIH_ORGPERSONROLE
+                    FILE or TABLE</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_ORGPERSONROLE</td>
+                <td>TEACHER_ID, SCHOOLNUM IS NOT PRESENT IN STG_SIH_ORGPERSONROLE
+                    FILE or TABLE</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_COURSE</td>
+                <td>COURSE_ID  IS NOT PRESENT IN STG_SIH_COURSE table and file</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_ORGPERSONROLE</td>
+                <td>SCHOOLNUM IS NOT PRESENT IN ORGANIZATION_ID IN STG_SIH_ORGPERSONROLE FILE
+                    or TABLE</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_ORGPERSONROLE</td>
+                <td>STUDENT_ID, SCHOOLNUM  IS NOT PRESENT IN STG_SIH_ORGPERSONROLE
+                    FILE or TABLE</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_COURSE</td>
+                <td>COURSE_ID PRESENT IS NOT PRESENT IN STG_SIH_COURSE table and file</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_ORGPERSONROLE</td>
+                <td>SCHOOLNUM IS NOT PRESENT IN ORGANIZATION_ID IN STG_SIH_ORGPERSONROLE FILE
+                    or TABLE</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_ORGPERSONROLE</td>
+                <td>TEACHER_ID, SCHOOLNUM  IS NOT PRESENT IN STG_SIH_ORGPERSONROLE
+                    FILE or TABLE</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_ORGPERSONROLE</td>
+                <td>SCHOOLNUM IS NOT IN ORGANIZATION_ID IN STG_SIH_ORGPERSONROLE FILE
+                    or TABLE</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_ORGPERSONROLE</td>
+                <td>STUDENT_ID, SCHOOLNUM IS NOT PRESENT IN STG_SIH_ORGPERSONROLE
+                    FILE or TABLE</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_ORGPERSONROLE</td>
+                <td>SCHOOLNUM IS NOT IN ORGANIZATION_ID IN STG_SIH_ORGPERSONROLE FILE
+                    or TABLE</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_PERSON</td>
+                <td>PERSON_ID  IS NOT PRESENT IN STG_SIH_PERSON<span>&nbsp;</span></td>
+            </tr>
+            <tr>
+                <td>STG_SIH_COURSE</td>
+                <td>COURSE_ID  IS NOT PRESENT IN STG_SIH_COURSE table and file</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_ORGPERSONROLE</td>
+                <td>SCHOOLNUM IS NOT PRESENT IN ORGANIZATION_ID IN STG_SIH_ORGPERSONROLE FILE
+                    or TABLE</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_ORGPERSONROLE</td>
+                <td>STUDENT_ID, SCHOOLNUM  IS NOT PRESENT IN STG_SIH_ORGPERSONROLE
+                    FILE or TABLE</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_ORGPERSONROLE</td>
+                <td>TEACHER_ID, SCHOOLNUM  IS NOT PRESENT IN STG_SIH_ORGPERSONROLE
+                    FILE or TABLE</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_COURSE</td>
+                <td>COURSE_ID  IS NOT PRESENT IN STG_SIH_COURSE table and file</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_ORGPERSONROLE</td>
+                <td>STUDENT_ID, SCHOOLNUM  IS NOT PRESENT IN STG_SIH_ORGPERSONROLE
+                    FILE or TABLE</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_ORGPERSONROLE</td>
+                <td>TEACHER_ID, SCHOOLNUM  IS NOT PRESENT IN STG_SIH_ORGPERSONROLE
+                    FILE or TABLE</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h4> List of Duplicate Validation Errors</h4>    
+    <table border="1" style="width: 300">
+        <tbody>
+            <tr style="background-color: darkgray">
+                <td>TABLE NAME</td>
+                <td>ERROR</td>
+            </tr>
+            <tr>
+                <td>STF_SIH_PERSON_ADDRESS</td>
+                <td>DUPLICATE PersonId</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_PERSON_DEMOGRAPHY</td>
+                <td>DUPLICATE  PersonId</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_PERSON</td>
+                <td>DUPLICATE  PersonId</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_PERSON_EMAIL</td>
+                <td>DUPLICATE PersonId</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_PERSON_HEALTH</td>
+                <td>DUPLICATE PersonId</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_PERSON_RELATIONSHIP</td>
+                <td>DUPLICATE PersonId</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_PERSON_TECH_ACCESS</td>
+                <td>DUPLICATE PersonId</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_PERSON_TELEPHONE</td>
+                <td>DUPLICATE  PersonId</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_CLASSENROATTEN</td>
+                <td>DUPLICATE StudentId
+                    ,SchoolYear,ClassDate, ClassId ,CourseId ,TeacherId ,ClassStartTime
+                    ,ClassEndTime,SchoolNum ,CourseTerm</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_CLASSROSTER</td>
+                <td>DUPLICATE 
+                    StudentId,CourseId,ClassId,SchoolYear,CourseTerm,Datestarted</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_CLASSSCHEDULE</td>
+                <td>DUPLICATE  SchoolYear
+                    ,ClassDate ,ClassId ,CourseId ,TeacherId ,ClassStartTime ,ClassEndTime
+                    ,SchoolNum ,CourseTerm</td>
+            </tr>
+            <tr>
+                <td>STG_SIH_COURSE</td>
+                <td>DUPLICATE  CourseId</td>
+            </tr>
+            <tr>
+                <td>STG_SIHK12ACADRECORD</td>
+                <td>DUPLICATE 
+                    StudentId,SchoolId,SchoolYear , StudentGuardianId, DateEnrolled</td>
+            </tr>
+            <tr>
+                <td>STG_SIHORGPERSONSROLE</td>
+                <td>DUPLICATE  OrgId, PersonId,
+                    Role</td>
+            </tr>
+            <tr>
+                <td>STUD_ASSESSMENT</td>
+                <td>DUPLICATE 
+                    StudentId,TeacherId ,CourseId, ClassId, CourseTerm, AcademicYrar</td>
+            </tr>
+            <tr>
+                <td>STUD_TEST_ASSESSMENT</td>
+                <td>DUPLICATE  StudentId
+                    ,TeacherId ,ClassId ,CourseId ,ClassPeriod ,CourseTerm ,StudentGrade
+                    ,AssessmentName ,AssessmentDate , SchoolId</td>
+            </tr>
+        </tbody>
+    </table>   
+    
+</body>
+</html>

@@ -1,0 +1,216 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>WEDC Data Model</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link href="WebPublish.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Home Page</a></td><td class="NavBarMainHighlight">File Layout</td>
+</tr>
+</table>
+</td><td class="NavBarRight">WEDI Interface</td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName"></span>
+<br>
+<span class="ElementTitle">Table @list:TAG_LIST</span>
+<p></p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">This table is a standalone table that holds tags that can be associated with a note. This table is used to populate screen with available tags. </br></br>This table would be configured for each district during the install. There are 7 predefined tags that would be implemented if the district did not decide to extend the list. The prefined values are listed in the TAG_TXT column definition. </td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Created</b></td><td class="PropertyValue">R1.2</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Configurable Table</b></td><td class="PropertyValue">yes - comes with a predefined list of tags</td>
+</tr>
+</table>
+<p></p>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="2"><a name="Columns">Columns</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_cSYWs3p2Eea_Q5160jEboA"><img border="0" src="../images//1208293073.jpeg" alt="TENANT_ID"></a><a href="#linkID_cSYWs3p2Eea_Q5160jEboA">TENANT_ID</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_cSYWuXp2Eea_Q5160jEboA"><img border="0" src="../images//1208293073.jpeg" alt="TAG_TXT"></a><a href="#linkID_cSYWuXp2Eea_Q5160jEboA">TAG_TXT</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_cSYWu3p2Eea_Q5160jEboA"><img border="0" src="../images//1208293073.jpeg" alt="IS_ACTIVE_YN"></a><a href="#linkID_cSYWu3p2Eea_Q5160jEboA">IS_ACTIVE_YN</a></td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="2"><a name="Primary Key ">Primary Key </a></td>
+</tr>
+<tr>
+<td><a href="#linkID_cSYWvXp2Eea_Q5160jEboA"><img border="0" src="../images//906305097.jpeg" alt="TAG_LIST_1"></a><a href="#linkID_cSYWvXp2Eea_Q5160jEboA">TAG_LIST_1</a></td>
+</tr>
+</table>
+<p></p>
+<table class="DetailsTable">
+<tr>
+<td class="DetailsTitle" colspan="2"><a name="columnDetail">Column Details</a></td>
+</tr>
+</table>
+<br>
+<span class="ListItem"><img src="../images//1208293073.jpeg">&nbsp;<a name="linkID_cSYWs3p2Eea_Q5160jEboA">TENANT_ID</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">A unique identifier assigned by IBM or a partner for the purpose of segmenting a distict's data in a multi-tenant environment.  </td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Business Key</b></td><td class="PropertyValue">yes</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">VARCHAR(4)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<span class="ListItem"><img src="../images//1208293073.jpeg">&nbsp;<a name="linkID_cSYWuXp2Eea_Q5160jEboA">TAG_TXT</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">Text a person can associate with a note as a tag.</br></br>Prefined domain:</br>Attendance</br>Behavior</br>Celebrate</br>Extra-Curriculars</br>Homework</br>Life Events</br>Miscellaneous</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">VARCHAR(40)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<span class="ListItem"><img src="../images//1208293073.jpeg">&nbsp;<a name="linkID_cSYWu3p2Eea_Q5160jEboA">IS_ACTIVE_YN</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">A yes/no indicator that identifies if a tag is available for use. 1 means yes and 0 means no.</br></br>Initially when the table is being configured all the tags would be set to 1. </td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">SMALLINT</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<p></p>
+<table class="DetailsTable">
+<tr>
+<td class="DetailsTitle" colspan="2"><a name="columnDetail">Primary Key Details</a></td>
+</tr>
+</table>
+<br>
+<span class="ListItem"><img src="../images//906305097.jpeg">&nbsp;<a name="linkID_cSYWvXp2Eea_Q5160jEboA">TAG_LIST_1</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Member</b></td><td class="PropertyValue">TENANT_ID [VARCHAR(4)]</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Member</b></td><td class="PropertyValue">TAG_TXT [VARCHAR(40)]</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="_5pLEsfqJEeW8lIw2IUNpGA-top-summary.html">Database</a></td><td class="NavBarMainLink"><a href="_BWRVEfzAEeWpH4UmpL0_FwInsightDataCollection-content.html">Schema</a></td><td class="NavBarMainHighlight">Table</td>
+</tr>
+</table>
+</td><td class="NavBarRight">WEDC Data Model</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,429 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>WEDC Data Model</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link href="WebPublish.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Home Page</a></td><td class="NavBarMainHighlight">File Layout</td>
+</tr>
+</table>
+</td><td class="NavBarRight">WEDI Interface</td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName"></span>
+<br>
+<span class="ElementTitle">Table STG_SIH_PERSON_TECHACCESS</span>
+<p></p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Created</b></td><td class="PropertyValue">R1</td>
+</tr>
+</table>
+<p></p>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="2"><a name="Columns">Columns</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_afaEQCZjEeaKKLQ6igXYTQ"><img border="0" src="../images//1208293073.jpeg" alt="PERSON_ID"></a><a href="#linkID_afaEQCZjEeaKKLQ6igXYTQ">PERSON_ID</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_afbSYCZjEeaKKLQ6igXYTQ"><img border="0" src="../images//1208293073.jpeg" alt="PERSON_TYPE"></a><a href="#linkID_afbSYCZjEeaKKLQ6igXYTQ">PERSON_TYPE</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_ewmzsCZjEeaKKLQ6igXYTQ"><img border="0" src="../images//1208293073.jpeg" alt="PHONE_BRAND"></a><a href="#linkID_ewmzsCZjEeaKKLQ6igXYTQ">PHONE_BRAND</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_ewRcgCZjEeaKKLQ6igXYTQ"><img border="0" src="../images//1208293073.jpeg" alt="CELL_PHONE_YN"></a><a href="#linkID_ewRcgCZjEeaKKLQ6igXYTQ">CELL_PHONE_YN</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_ewVt8CZjEeaKKLQ6igXYTQ"><img border="0" src="../images//1208293073.jpeg" alt="HOME_COMPUTER_YN"></a><a href="#linkID_ewVt8CZjEeaKKLQ6igXYTQ">HOME_COMPUTER_YN</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_ewZ_YCZjEeaKKLQ6igXYTQ"><img border="0" src="../images//1208293073.jpeg" alt="INTERNET_ACCESS_YN"></a><a href="#linkID_ewZ_YCZjEeaKKLQ6igXYTQ">INTERNET_ACCESS_YN</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_eweQ0CZjEeaKKLQ6igXYTQ"><img border="0" src="../images//1208293073.jpeg" alt="SMART_PHONE_YN"></a><a href="#linkID_eweQ0CZjEeaKKLQ6igXYTQ">SMART_PHONE_YN</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_ewiiQCZjEeaKKLQ6igXYTQ"><img border="0" src="../images//1208293073.jpeg" alt="TABLET_YN"></a><a href="#linkID_ewiiQCZjEeaKKLQ6igXYTQ">TABLET_YN</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_f9alECZjEeaKKLQ6igXYTQ"><img border="0" src="../images//1208293073.jpeg" alt="DATA_AS_OF_DATE"></a><a href="#linkID_f9alECZjEeaKKLQ6igXYTQ">DATA_AS_OF_DATE</a></td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="2"><a name="Primary Key ">Primary Key </a></td>
+</tr>
+<tr>
+<td><a href="#linkID_-jlYcDPdEeaX9ZBdseazHg"><img border="0" src="../images//906305097.jpeg" alt="STG_SIH_PERSON_TE1"></a><a href="#linkID_-jlYcDPdEeaX9ZBdseazHg">STG_SIH_PERSON_TE1</a></td>
+</tr>
+</table>
+<p></p>
+<table class="DetailsTable">
+<tr>
+<td class="DetailsTitle" colspan="2"><a name="columnDetail">Column Details</a></td>
+</tr>
+</table>
+<br>
+<span class="ListItem"><img src="../images//1208293073.jpeg">&nbsp;<a name="linkID_afaEQCZjEeaKKLQ6igXYTQ">PERSON_ID</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">Unique identifier for a person being stored in Insight. </br></br>For a teacher, principal, administrator (school district employee) this could be thier employee number</br>For a student number this could be thier student number</br>For a contact this may have to be fabricated using this pattern if there is no source id 'student_id + contact lastname + contact first name + relationship'</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">VARCHAR(250)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<span class="ListItem"><img src="../images//1208293073.jpeg">&nbsp;<a name="linkID_afbSYCZjEeaKKLQ6igXYTQ">PERSON_TYPE</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">Identifies the type of person.</br></br>Domain: teacher, student, contact, principal, school district administrator</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">VARCHAR(50)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<span class="ListItem"><img src="../images//1208293073.jpeg">&nbsp;<a name="linkID_ewmzsCZjEeaKKLQ6igXYTQ">PHONE_BRAND</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">If the person has multiple phone brands, concatenate the brands.</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">VARCHAR(30)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<span class="ListItem"><img src="../images//1208293073.jpeg">&nbsp;<a name="linkID_ewRcgCZjEeaKKLQ6igXYTQ">CELL_PHONE_YN</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">SMALLINT</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<span class="ListItem"><img src="../images//1208293073.jpeg">&nbsp;<a name="linkID_ewVt8CZjEeaKKLQ6igXYTQ">HOME_COMPUTER_YN</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">SMALLINT</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<span class="ListItem"><img src="../images//1208293073.jpeg">&nbsp;<a name="linkID_ewZ_YCZjEeaKKLQ6igXYTQ">INTERNET_ACCESS_YN</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">SMALLINT</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<span class="ListItem"><img src="../images//1208293073.jpeg">&nbsp;<a name="linkID_eweQ0CZjEeaKKLQ6igXYTQ">SMART_PHONE_YN</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">SMALLINT</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<span class="ListItem"><img src="../images//1208293073.jpeg">&nbsp;<a name="linkID_ewiiQCZjEeaKKLQ6igXYTQ">TABLET_YN</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">SMALLINT</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<span class="ListItem"><img src="../images//1208293073.jpeg">&nbsp;<a name="linkID_f9alECZjEeaKKLQ6igXYTQ">DATA_AS_OF_DATE</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">Date this data set was created, format: YYYY-MM-DD</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">TIMESTAMP</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<p></p>
+<table class="DetailsTable">
+<tr>
+<td class="DetailsTitle" colspan="2"><a name="columnDetail">Primary Key Details</a></td>
+</tr>
+</table>
+<br>
+<span class="ListItem"><img src="../images//906305097.jpeg">&nbsp;<a name="linkID_-jlYcDPdEeaX9ZBdseazHg">STG_SIH_PERSON_TE1</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Member</b></td><td class="PropertyValue">PERSON_ID [VARCHAR(250)]</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="_5pLEsfqJEeW8lIw2IUNpGA-top-summary.html">Database</a></td><td class="NavBarMainLink"><a href="_BWRVEfzAEeWpH4UmpL0_FwInsightDataCollection-content.html">Schema</a></td><td class="NavBarMainHighlight">Table</td>
+</tr>
+</table>
+</td><td class="NavBarRight">WEDC Data Model</td>
+</tr>
+</table>
+</body>
+</html>

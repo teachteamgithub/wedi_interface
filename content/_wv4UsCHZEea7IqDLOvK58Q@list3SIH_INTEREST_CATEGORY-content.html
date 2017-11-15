@@ -1,0 +1,223 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>WEDC Data Model</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link href="WebPublish.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Home Page</a></td><td class="NavBarMainHighlight">File Layout</td>
+</tr>
+</table>
+</td><td class="NavBarRight">WEDI Interface</td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName"></span>
+<br>
+<span class="ElementTitle">Table @list:SIH_INTEREST_CATEGORY</span>
+<p></p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">There is a JSON file that contains the categories and url references. That should be used to load the table. </br></br>There is a predefined set of interests that are loaded when the application is configured.</br></br>Domain:</br>Art</br>Animals</br>Books</br>Cooking</br>Movies</br>Music</br>Outdoors</br>Politics</br>Sports</br>Technology</br>Travel</br></br>Note from Austin Burrows on this data (5/24)</br>Yeah, interest categories are predetermined, but more categories could be added if needed. There is no mechanism in the app to add new categories. That would need to be a back end change. Teachers can't add new categories. They can only add comments to the given categories for a student. When the app is first used, a student profile has a list of 10 interest categories with 0 comments for each one. </br></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Created</b></td><td class="PropertyValue">R1 - Element</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Target</b></td><td class="PropertyValue">SIHINTERESTCATEGORY</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Configurable Table</b></td><td class="PropertyValue">yes - comes with a predefined list of interests</td>
+</tr>
+</table>
+<p></p>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="2"><a name="Columns">Columns</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_3s6YQCHZEea7IqDLOvK58Q"><img border="0" src="../images//1208293073.jpeg" alt="INTEREST_CATAGORY_DESC"></a><a href="#linkID_3s6YQCHZEea7IqDLOvK58Q">INTEREST_CATAGORY_DESC</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_3s6YQiHZEea7IqDLOvK58Q"><img border="0" src="../images//1208293073.jpeg" alt="IMAGE_URL"></a><a href="#linkID_3s6YQiHZEea7IqDLOvK58Q">IMAGE_URL</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_3tAe4CHZEea7IqDLOvK58Q"><img border="0" src="../images//1208293073.jpeg" alt="THUMBNAIL_IMAGE_URL"></a><a href="#linkID_3tAe4CHZEea7IqDLOvK58Q">THUMBNAIL_IMAGE_URL</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_w-Y18CZnEeaKKLQ6igXYTQ"><img border="0" src="../images//1208293073.jpeg" alt="DATA_AS_OF_DATE"></a><a href="#linkID_w-Y18CZnEeaKKLQ6igXYTQ">DATA_AS_OF_DATE</a></td>
+</tr>
+</table>
+<p></p>
+<table class="DetailsTable">
+<tr>
+<td class="DetailsTitle" colspan="2"><a name="columnDetail">Column Details</a></td>
+</tr>
+</table>
+<br>
+<span class="ListItem"><img src="../images//1208293073.jpeg">&nbsp;<a name="linkID_3s6YQCHZEea7IqDLOvK58Q">INTEREST_CATAGORY_DESC</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">VARCHAR(60)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<span class="ListItem"><img src="../images//1208293073.jpeg">&nbsp;<a name="linkID_3s6YQiHZEea7IqDLOvK58Q">IMAGE_URL</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">URL of the location for the image the front end uses for this interest category.</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">VARCHAR(120)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<span class="ListItem"><img src="../images//1208293073.jpeg">&nbsp;<a name="linkID_3tAe4CHZEea7IqDLOvK58Q">THUMBNAIL_IMAGE_URL</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">URL of the location for the image thumbnail the front end uses for this interest category.</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">VARCHAR(120)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<span class="ListItem"><img src="../images//1208293073.jpeg">&nbsp;<a name="linkID_w-Y18CZnEeaKKLQ6igXYTQ">DATA_AS_OF_DATE</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">Date this data set was created, format: YYYY-MM-DD</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">TIMESTAMP</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="_5pLEsfqJEeW8lIw2IUNpGA-top-summary.html">Database</a></td><td class="NavBarMainLink"><a href="_BWRVEfzAEeWpH4UmpL0_FwInsightDataCollection-content.html">Schema</a></td><td class="NavBarMainHighlight">Table</td>
+</tr>
+</table>
+</td><td class="NavBarRight">WEDC Data Model</td>
+</tr>
+</table>
+</body>
+</html>

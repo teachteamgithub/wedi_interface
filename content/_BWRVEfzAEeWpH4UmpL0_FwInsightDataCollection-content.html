@@ -1,0 +1,199 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>InsightDataCollection (WEDC Data Model)</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link href="WebPublish.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Home Page</a></td><td class="NavBarMainHighlight">File Layout</td>
+</tr>
+</table>
+</td><td class="NavBarRight">WEDI Interface</td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName"></span>
+<br>
+<span class="ElementTitle">Schema InsightDataCollection</span>
+<p></p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">Documents the data to be collected from schools and school districts when populating Insight data repositories. This includes file layouts and list of things to collect and validate with the school district.</br></br>The file layouts have been synchronized with the file ALS Input Tables Required from School Districts_S2T(20160413).xlsx</br></br>Change log</br>------ R2.2 start ------</br>10/10/17</br>- change STUDENT_TEST_ASSESSMENT.LEARNING_ACTIVITY_ID from varchar(40) TO VARCHAR(60) per DeliveryK12_Design-Development/issues/207</br>10/5/17</br>- added STUDENT_STANDARDIZED_TEST.WORK_PRODUCT_TITLE</br>- deleted STUDENT_STANDARDIZED_TEST.MEAS_EVIDENCE per Ajay</br>- synced EOL_MEAS with Prod B ddl</br>10/4/17</br>- moved mastery work tables into this schema from IBMSIH</br>------ R2.1 start ------</br>9/14/17</br>- created STG_SIH_OTHER_HEALTH_AND_DESIGNATIONS</br>- renamed STANDARD_REFERENCE to CFG_LEARNING_STANDARD_REFERENCE</br></br>------ R2.0 start ------</br>9/13/17</br>created STG_COURSE_UNIT</br>created STUDENT_STANDARDIZED_TEST</br>created STANDARD_REFERENCE</br></br>5/9/17</br>data collection</br>- added STUDENT_TEST_ASSESSMENT.LEARNING_ACTIVITY_DUE_DATE</br>- added MASTERY_COLOR_LIST.INTERVAL_NO</br>3/7/17</br>- added @list:INSIGHT_CATEGORY</br></br>------ R1.2 changes frozen ------</br>12/13/16</br>- renamed 4 504 plan columns to resolve  R1.2 Data Model - Column beginning with numbers causing issue in DataStage, for SIH_PERSON_HEALTH #918 </br></br>12/12/16</br>- STG_SIH_COURSE.COURSE_ID -&gt; varchar(20)</br>- STG_SIH_PERSON_ADDRESS.ADDRESS_LINE_ONE -&gt; varchar(120)</br>- STG_SIH_PERSON_ADDRESS.ADDRESS_LINE_TWO -&gt; varchar(120)</br>- STG_SIH_PERSON_EMAIL.EMAIL_TYPE -&gt; varchar(20)</br>- STG_SIH_CLASS_SCHEDULE.CLASS_PERIOD -&gt; varchar(20)</br>- STG_SIH_K12ACADRECORD.STUDENT_GUARDIAN_ID -&gt; varchar(250)</br>- STG_SIH_ORGANIZATION_DETAIL.WEBSITE -&gt; varchar(120)</br>- STG_SIH_PERSON.PREFIX -&gt; varchar(60)</br>- STG_SIH_PERSON.SUFFIX -&gt; varchar(60)</br></br>12/5/15</br>- standardized CLASS_ID TO VARCHAR(250) in STUDENT_ASSESSMENT, GRADE_SCR_THRESH, STUDENT_TEST_ASSESSMENT</br></br>11/29/16</br>- updated definiton for STG_SIH_CLASS_SCHEDULE.CLASS_START_TIME</br>- updated definiton for STG_SIH_CLASS_SCHEDULE.CLASS_END_TIME</br></br>10/17/16</br>- added MASTERY_COLOR_LIST which is a configuration table</br></br>9/14/16</br>- added @list:TAG_LIST R1.2</br></br>9/12/16</br>- ETL needs to be updated to load SIHORG.CITY, SIHORG.STATE, SIHORG.COUNTRY, SIHORG.IS_ACTIVE_YN R1.2</br></br>9/8/16</br>- updated metadata</br>- deleted SIHPERSONDEMGRAPHY.REF_COUNTRY_ID as the column is not sourced</br>- deleted SIHPERSONDEMGRAPHY.REF_LANGUAGE_ID as the column is not sourced</br>- deleted SIHPERSONDEMGRAPHY.REF_STATE_ID as the column is not sourced</br>- added SIHPERSONHEALTH.504_PLAN_ENTRY_DATE</br>- added SIHPERSONHEALTH.504_PLAN_EXIT_DATE</br>- added SIHPERSONADDRESS.ADDRESS_TYPE</br></br>07/15</br>- corrected spelling mistake for SIHCOURSE.MINIMUM_PASS</br></br>07/14 </br>- added start and drop date to STG_SIH_CLASS_ROSTER</br>- added DATA_AS_AT_DATE to Grade_Scr_Thresh & Student_Test_Assessment</br></br>6/29</br>- corrected spelling of PRONUNCIATON</br></br>6/27</br>- added STG_SIH_CLASS_SCHEDULE</br></br>6/20</br>- @deprecated:GRADE_SCR_THRESH.CLASS_PERIOD</br>- removed STUDENT_ASSESSMENT.DATA_AS_OF_DATE from primary key</br></br>6/15</br>- create STG_SIH_ORGRELATIONSHIP table</br>- @deprecated:STG_DW_STUDENT_GPA table</br>- added STG_SIH_K12ACADRECORD.GPA</br>- added STG_SIH_K12ACADRECORD.GPA_DATE</br>- @deprecated:ASSESSMENT_TYPE table</br>- added STUDENT_TEST_ASSESSMENT.ASSESSMENT_NAME</br>- renamed GRADE_SCR_THRESH.TERM to GRADE_SCR_THRESH.COURSE_TERM</br>- @deprecated:GRADE_SCR_THRESH.DATE_OF_SCORE</br>- renamed STUDENT_TEST_ASSESSMENT.TERM to STUDENT_TEST_ASSESSMENT.COURSE.TERM</br>- @deprecated:STUDENT_TEST_ASSESSMENT.ASSESSMENT_TYPE_ID</br>- renamed STUDENT_ASSESSMENT.TERM to STUDENT_ASSESSMENT.COURSE_TERM</br>- @deprecated:STUDENT_ASSESSMENT.CLASS_PERIOD</br></br>6/13</br>- added STG_SIH_CLASS_ROSTER.DATA_AS_OF_DATE (AL)</br></br>6/10 </br>- moved STG_SIH_LEARNING_STANDARD_PROGRESSION to @placeholder, not needed yet</br>- added STG_SIH_LEARNING_STANDARD.LEVEL_NUMBER and STG_SIH_LEARNING_STANDARD.LEVEL_NAME</br>- changed  STG_SIH_LEARNING_STANDARD..LEARNING_STANDARD_TEXT to varchar(400)</br></br>6/9</br>- added STG_SIH_CLASS_ROSTER</br></br>6/7</br>- added SCHOOL_ID to GRADE_SCR_THRESH, STUDENT_ASSESSMENT, STUDENT_TEST_ASSESSMENT</br>- added TERM to GRADE_SCR_THRESH, STUDENT_ASSESSMENT, STUDENT_TEST_ASSESSMENT</br>- added STG_DW_STUDENT_GPA.ACADEMIC_YEAR</br></br>6/2</br>- added ACADEMIC_YEAR_WEEK_NUMBER to @ETL:SIH_CALENDAR</br></br>5/20</br>- added STG_SIH_STUDENT_GPA</br>- added STG_SIH_STUDENT_SERVICE_HOURS</br>- added STG_SIH_ANNOUNCEMENT</td>
+</tr>
+</table>
+<p></p>
+<table border="1" class="PackagesTable"></table>
+<table border="1" class="ContainedElements">
+<tr>
+<td class="DetailsTitle" colspan="2">Diagrams </td>
+</tr>
+<br>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="diagram_.xP7.pYZR6E.e.a.c.g8.kGA9.lBD.gConfiguratable Tables-content.html"><img border="0" src="../images//-1123737025.jpeg" alt="Configuratable Tables"></a><a href="diagram_.xP7.pYZR6E.e.a.c.g8.kGA9.lBD.gConfiguratable Tables-content.html">Configuratable Tables</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="diagram_CTLJ0J.i3E.e.e9D.b6C5B.vR7.wEvidence of learning staging tables-content.html"><img border="0" src="../images//-1123737025.jpeg" alt="Evidence of learning staging tables"></a><a href="diagram_CTLJ0J.i3E.e.e9D.b6C5B.vR7.wEvidence of learning staging tables-content.html">Evidence of learning staging tables</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="diagram_PHFIUK.lZE.e.eU0_.w.iN.o.i_GAMastery prototyping configuration tables-content.html"><img border="0" src="../images//-1123737025.jpeg" alt="Mastery prototyping configuration tables"></a><a href="diagram_PHFIUK.lZE.e.eU0_.w.iN.o.i_GAMastery prototyping configuration tables-content.html">Mastery prototyping configuration tables</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="diagram_F0.u.a8J7LE.e.e_7P.cR.aMPK.gASTG_COURSE_UNIT related tables-content.html"><img border="0" src="../images//-1123737025.jpeg" alt="STG_COURSE_UNIT related tables"></a><a href="diagram_F0.u.a8J7LE.e.e_7P.cR.aMPK.gASTG_COURSE_UNIT related tables-content.html">STG_COURSE_UNIT related tables</a></td>
+</tr>
+</table>
+<table border="1" class="ContainedElements">
+<tr>
+<td class="DetailsTitle" colspan="2">Tables </td>
+</tr>
+<br>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_UtCdMCQXEeawJbnufi9Knw@IBM3SIH_CALENDAR-content.html"><img border="0" src="../images//319103245.jpeg" alt="@IBM:SIH_CALENDAR"></a><a href="_UtCdMCQXEeawJbnufi9Knw@IBM3SIH_CALENDAR-content.html">@IBM:SIH_CALENDAR</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_BCufMDNAEeaF5bfWxOD39Q@IBM3SIH_ORGRELATIONSHIP-content.html"><img border="0" src="../images//319103245.jpeg" alt="@IBM:SIH_ORGRELATIONSHIP"></a><a href="_BCufMDNAEeaF5bfWxOD39Q@IBM3SIH_ORGRELATIONSHIP-content.html">@IBM:SIH_ORGRELATIONSHIP</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_Ule7MCgeEea-Q-M03IbyCQ@IBM3SIH_ROLES-content.html"><img border="0" src="../images//319103245.jpeg" alt="@IBM:SIH_ROLES"></a><a href="_Ule7MCgeEea-Q-M03IbyCQ@IBM3SIH_ROLES-content.html">@IBM:SIH_ROLES</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_Gm6XoKdLEeaqVpn8fHlHBA@list3EDUCATION_STAGE-content.html"><img border="0" src="../images//319103245.jpeg" alt="@list:EDUCATION_STAGE"></a><a href="_Gm6XoKdLEeaqVpn8fHlHBA@list3EDUCATION_STAGE-content.html">@list:EDUCATION_STAGE</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_wGl8MEQVEeeyBbFE3aH1tA@list3EOL_CATEGORY-content.html"><img border="0" src="../images//319103245.jpeg" alt="@list:EOL_CATEGORY"></a><a href="_wGl8MEQVEeeyBbFE3aH1tA@list3EOL_CATEGORY-content.html">@list:EOL_CATEGORY</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_c76X4ANaEee6680TuFcwZA@list3INSIGHT_CATEGORY-content.html"><img border="0" src="../images//319103245.jpeg" alt="@list:INSIGHT_CATEGORY"></a><a href="_c76X4ANaEee6680TuFcwZA@list3INSIGHT_CATEGORY-content.html">@list:INSIGHT_CATEGORY</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_7nVIsNmfEeaZrppqDQr6UQ@list3LETTER_GRADES-content.html"><img border="0" src="../images//319103245.jpeg" alt="@list:LETTER_GRADES"></a><a href="_7nVIsNmfEeaZrppqDQr6UQ@list3LETTER_GRADES-content.html">@list:LETTER_GRADES</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_ptAXYCQUEeawJbnufi9Knw@list3SCHOOL_CALENDAR-content.html"><img border="0" src="../images//319103245.jpeg" alt="@list:SCHOOL_CALENDAR"></a><a href="_ptAXYCQUEeawJbnufi9Knw@list3SCHOOL_CALENDAR-content.html">@list:SCHOOL_CALENDAR</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_wv4UsCHZEea7IqDLOvK58Q@list3SIH_INTEREST_CATEGORY-content.html"><img border="0" src="../images//319103245.jpeg" alt="@list:SIH_INTEREST_CATEGORY"></a><a href="_wv4UsCHZEea7IqDLOvK58Q@list3SIH_INTEREST_CATEGORY-content.html">@list:SIH_INTEREST_CATEGORY</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_RCIpoP0cEeaYQo6iaUOVsA@list3SPECIAL_DESIGNATION_LIST-content.html"><img border="0" src="../images//319103245.jpeg" alt="@list:SPECIAL_DESIGNATION_LIST"></a><a href="_RCIpoP0cEeaYQo6iaUOVsA@list3SPECIAL_DESIGNATION_LIST-content.html">@list:SPECIAL_DESIGNATION_LIST</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_cSYWsHp2Eea_Q5160jEboA@list3TAG_LIST-content.html"><img border="0" src="../images//319103245.jpeg" alt="@list:TAG_LIST"></a><a href="_cSYWsHp2Eea_Q5160jEboA@list3TAG_LIST-content.html">@list:TAG_LIST</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_5ImMsCAkEeaMjovqjDpK4w@listR23configuration_parameters-content.html"><img border="0" src="../images//319103245.jpeg" alt="@listR2:configuration_parameters"></a><a href="_5ImMsCAkEeaMjovqjDpK4w@listR23configuration_parameters-content.html">@listR2:configuration_parameters</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_qadJkJioEee9Db6C5BvR7wCFG_LEARNING_STANDARD_REFERENCE-content.html"><img border="0" src="../images//319103245.jpeg" alt="CFG_LEARNING_STANDARD_REFERENCE"></a><a href="_qadJkJioEee9Db6C5BvR7wCFG_LEARNING_STANDARD_REFERENCE-content.html">CFG_LEARNING_STANDARD_REFERENCE</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_EfJAk2gvEeeC4-xhoW-jkgCFG_TENANT_STANDARDS_CONFIG-content.html"><img border="0" src="../images//319103245.jpeg" alt="CFG_TENANT_STANDARDS_CONFIG"></a><a href="_EfJAk2gvEeeC4-xhoW-jkgCFG_TENANT_STANDARDS_CONFIG-content.html">CFG_TENANT_STANDARDS_CONFIG</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_frfyUKlYEeeU0_wiNoi_GACOURSE_ENROLL-content.html"><img border="0" src="../images//319103245.jpeg" alt="COURSE_ENROLL"></a><a href="_frfyUKlYEeeU0_wiNoi_GACOURSE_ENROLL-content.html">COURSE_ENROLL</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_KDkaoKnnEeexgK5QfcHAUwCOURSE_MAP_EDGE_LIST-content.html"><img border="0" src="../images//319103245.jpeg" alt="COURSE_MAP_EDGE_LIST"></a><a href="_KDkaoKnnEeexgK5QfcHAUwCOURSE_MAP_EDGE_LIST-content.html">COURSE_MAP_EDGE_LIST</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_ttao8Dv_EeeZF793sEMvagCOURSE_UNIT-content.html"><img border="0" src="../images//319103245.jpeg" alt="COURSE_UNIT"></a><a href="_ttao8Dv_EeeZF793sEMvagCOURSE_UNIT-content.html">COURSE_UNIT</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_G58h0KnoEeexgK5QfcHAUwCPT_LONG_ONBOARD-content.html"><img border="0" src="../images//319103245.jpeg" alt="CPT_LONG_ONBOARD"></a><a href="_G58h0KnoEeexgK5QfcHAUwCPT_LONG_ONBOARD-content.html">CPT_LONG_ONBOARD</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_WkUfEKnfEeexgK5QfcHAUwEOL_MEAS_ONBOARD-content.html"><img border="0" src="../images//319103245.jpeg" alt="EOL_MEAS_ONBOARD"></a><a href="_WkUfEKnfEeexgK5QfcHAUwEOL_MEAS_ONBOARD-content.html">EOL_MEAS_ONBOARD</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_qznwUKnnEeexgK5QfcHAUwLEARN_STD_CPT_BRIDGE-content.html"><img border="0" src="../images//319103245.jpeg" alt="LEARN_STD_CPT_BRIDGE"></a><a href="_qznwUKnnEeexgK5QfcHAUwLEARN_STD_CPT_BRIDGE-content.html">LEARN_STD_CPT_BRIDGE</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_KT8V4JR6Eeacg8kGA9lBDgMASTERY_COLOR_LIST-content.html"><img border="0" src="../images//319103245.jpeg" alt="MASTERY_COLOR_LIST"></a><a href="_KT8V4JR6Eeacg8kGA9lBDgMASTERY_COLOR_LIST-content.html">MASTERY_COLOR_LIST</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_ccKRcJiiEee9Db6C5BvR7wSTG_COURSE_UNIT-content.html"><img border="0" src="../images//319103245.jpeg" alt="STG_COURSE_UNIT"></a><a href="_ccKRcJiiEee9Db6C5BvR7wSTG_COURSE_UNIT-content.html">STG_COURSE_UNIT</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_ZnRaoB7JEeavbOUSmdufmQSTG_SIH_ANNOUNCEMENT-content.html"><img border="0" src="../images//319103245.jpeg" alt="STG_SIH_ANNOUNCEMENT"></a><a href="_ZnRaoB7JEeavbOUSmdufmQSTG_SIH_ANNOUNCEMENT-content.html">STG_SIH_ANNOUNCEMENT</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_NzzrQAZtEeapy5ADJjp2pQSTG_SIH_CLASS_ROSTER-content.html"><img border="0" src="../images//319103245.jpeg" alt="STG_SIH_CLASS_ROSTER"></a><a href="_NzzrQAZtEeapy5ADJjp2pQSTG_SIH_CLASS_ROSTER-content.html">STG_SIH_CLASS_ROSTER</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_BE2gUCdyEea0YoJazQGuIQSTG_SIH_CLASS_SCHEDULE-content.html"><img border="0" src="../images//319103245.jpeg" alt="STG_SIH_CLASS_SCHEDULE"></a><a href="_BE2gUCdyEea0YoJazQGuIQSTG_SIH_CLASS_SCHEDULE-content.html">STG_SIH_CLASS_SCHEDULE</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_rcrDAAZsEeapy5ADJjp2pQSTG_SIH_CLASSENROLATTEN-content.html"><img border="0" src="../images//319103245.jpeg" alt="STG_SIH_CLASSENROLATTEN"></a><a href="_rcrDAAZsEeapy5ADJjp2pQSTG_SIH_CLASSENROLATTEN-content.html">STG_SIH_CLASSENROLATTEN</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_CeoiwAZtEeapy5ADJjp2pQSTG_SIH_COURSE-content.html"><img border="0" src="../images//319103245.jpeg" alt="STG_SIH_COURSE"></a><a href="_CeoiwAZtEeapy5ADJjp2pQSTG_SIH_COURSE-content.html">STG_SIH_COURSE</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_A936oAZtEeapy5ADJjp2pQSTG_SIH_K12ACADRECORD-content.html"><img border="0" src="../images//319103245.jpeg" alt="STG_SIH_K12ACADRECORD"></a><a href="_A936oAZtEeapy5ADJjp2pQSTG_SIH_K12ACADRECORD-content.html">STG_SIH_K12ACADRECORD</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_ucPLcAZsEeapy5ADJjp2pQSTG_SIH_ORGANIZATION_DETAIL-content.html"><img border="0" src="../images//319103245.jpeg" alt="STG_SIH_ORGANIZATION_DETAIL"></a><a href="_ucPLcAZsEeapy5ADJjp2pQSTG_SIH_ORGANIZATION_DETAIL-content.html">STG_SIH_ORGANIZATION_DETAIL</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="__Xt1IAZsEeapy5ADJjp2pQSTG_SIH_ORGPERSONROLE-content.html"><img border="0" src="../images//319103245.jpeg" alt="STG_SIH_ORGPERSONROLE"></a><a href="__Xt1IAZsEeapy5ADJjp2pQSTG_SIH_ORGPERSONROLE-content.html">STG_SIH_ORGPERSONROLE</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_an3EYJl1Eee014TbahHe8gSTG_SIH_OTHER_HEALTH_AND_DESIGNATIONS-content.html"><img border="0" src="../images//319103245.jpeg" alt="STG_SIH_OTHER_HEALTH_AND_DESIGNATIONS"></a><a href="_an3EYJl1Eee014TbahHe8gSTG_SIH_OTHER_HEALTH_AND_DESIGNATIONS-content.html">STG_SIH_OTHER_HEALTH_AND_DESIGNATIONS</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_wRwioAZsEeapy5ADJjp2pQSTG_SIH_PERSON-content.html"><img border="0" src="../images//319103245.jpeg" alt="STG_SIH_PERSON"></a><a href="_wRwioAZsEeapy5ADJjp2pQSTG_SIH_PERSON-content.html">STG_SIH_PERSON</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_37bpwAZsEeapy5ADJjp2pQSTG_SIH_PERSON_ADDRESS-content.html"><img border="0" src="../images//319103245.jpeg" alt="STG_SIH_PERSON_ADDRESS"></a><a href="_37bpwAZsEeapy5ADJjp2pQSTG_SIH_PERSON_ADDRESS-content.html">STG_SIH_PERSON_ADDRESS</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_yqjmAAZsEeapy5ADJjp2pQSTG_SIH_PERSON_DEMGRAPHY-content.html"><img border="0" src="../images//319103245.jpeg" alt="STG_SIH_PERSON_DEMGRAPHY"></a><a href="_yqjmAAZsEeapy5ADJjp2pQSTG_SIH_PERSON_DEMGRAPHY-content.html">STG_SIH_PERSON_DEMGRAPHY</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_56NqoAZsEeapy5ADJjp2pQSTG_SIH_PERSON_EMAIL-content.html"><img border="0" src="../images//319103245.jpeg" alt="STG_SIH_PERSON_EMAIL"></a><a href="_56NqoAZsEeapy5ADJjp2pQSTG_SIH_PERSON_EMAIL-content.html">STG_SIH_PERSON_EMAIL</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_0whM8AZsEeapy5ADJjp2pQSTG_SIH_PERSON_HEALTH-content.html"><img border="0" src="../images//319103245.jpeg" alt="STG_SIH_PERSON_HEALTH"></a><a href="_0whM8AZsEeapy5ADJjp2pQSTG_SIH_PERSON_HEALTH-content.html">STG_SIH_PERSON_HEALTH</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_9QUDwAZsEeapy5ADJjp2pQSTG_SIH_PERSON_RELATIONSHIP-content.html"><img border="0" src="../images//319103245.jpeg" alt="STG_SIH_PERSON_RELATIONSHIP"></a><a href="_9QUDwAZsEeapy5ADJjp2pQSTG_SIH_PERSON_RELATIONSHIP-content.html">STG_SIH_PERSON_RELATIONSHIP</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_2OwFgAZsEeapy5ADJjp2pQSTG_SIH_PERSON_TECHACCESS-content.html"><img border="0" src="../images//319103245.jpeg" alt="STG_SIH_PERSON_TECHACCESS"></a><a href="_2OwFgAZsEeapy5ADJjp2pQSTG_SIH_PERSON_TECHACCESS-content.html">STG_SIH_PERSON_TECHACCESS</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_7SWiQAZsEeapy5ADJjp2pQSTG_SIH_PERSON_TELEPHONE-content.html"><img border="0" src="../images//319103245.jpeg" alt="STG_SIH_PERSON_TELEPHONE"></a><a href="_7SWiQAZsEeapy5ADJjp2pQSTG_SIH_PERSON_TELEPHONE-content.html">STG_SIH_PERSON_TELEPHONE</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_s8SWQB7DEeavbOUSmdufmQSTG_SIH_STUDENT_SERVICE_HOURS-content.html"><img border="0" src="../images//319103245.jpeg" alt="STG_SIH_STUDENT_SERVICE_HOURS"></a><a href="_s8SWQB7DEeavbOUSmdufmQSTG_SIH_STUDENT_SERVICE_HOURS-content.html">STG_SIH_STUDENT_SERVICE_HOURS</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_cLFbYPzAEeWpH4UmpL0_FwSTUDENT_ASSESSMENT-content.html"><img border="0" src="../images//319103245.jpeg" alt="STUDENT_ASSESSMENT"></a><a href="_cLFbYPzAEeWpH4UmpL0_FwSTUDENT_ASSESSMENT-content.html">STUDENT_ASSESSMENT</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_aY_z8JivEee9Db6C5BvR7wSTUDENT_STANDARDIZED_TEST-content.html"><img border="0" src="../images//319103245.jpeg" alt="STUDENT_STANDARDIZED_TEST"></a><a href="_aY_z8JivEee9Db6C5BvR7wSTUDENT_STANDARDIZED_TEST-content.html">STUDENT_STANDARDIZED_TEST</a></td>
+</tr>
+<tr class="ClassTableEntry">
+<td class="ClassTableEntryLink"><a href="_8-2zcPzAEeWpH4UmpL0_FwSTUDENT_TEST_ASSESSMENT-content.html"><img border="0" src="../images//319103245.jpeg" alt="STUDENT_TEST_ASSESSMENT"></a><a href="_8-2zcPzAEeWpH4UmpL0_FwSTUDENT_TEST_ASSESSMENT-content.html">STUDENT_TEST_ASSESSMENT</a></td>
+</tr>
+</table>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="_5pLEsfqJEeW8lIw2IUNpGA-top-summary.html">Database</a></td><td class="NavBarMainHighlight">Schema</td>
+</tr>
+</table>
+</td><td class="NavBarRight">WEDC Data Model</td>
+</tr>
+</table>
+</body>
+</html>

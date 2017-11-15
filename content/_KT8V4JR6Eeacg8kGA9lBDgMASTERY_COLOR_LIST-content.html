@@ -1,0 +1,456 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>WEDC Data Model</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link href="WebPublish.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Home Page</a></td><td class="NavBarMainHighlight">File Layout</td>
+</tr>
+</table>
+</td><td class="NavBarRight">WEDI Interface</td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName"></span>
+<br>
+<span class="ElementTitle">Table MASTERY_COLOR_LIST</span>
+<p></p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">Staging source / Algorithim input</br>This is a system table that hold configurable parameters that drive how mastery is visualized. This table is configured by the district and is used by all schools in the district. Up to 5 preset color ranges can be configured.  </br></br>If a district decides it only wants 3 ranges, the expectation is the forecasting model would only deliver results in 3 bins. </br></br>The starting values for a district are</br>At Risk </br>Low Performing </br>Satisfactory </br>Mastered </br>Above Mastery </br>Needs Assessment </td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Created</b></td><td class="PropertyValue">R1.2 - Enlight #575</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Configurable Table</b></td><td class="PropertyValue">yes - mastery forecast result range needs to be defined for up to 5 colors</td>
+</tr>
+</table>
+<p></p>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="2"><a name="Columns">Columns</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_KT8V45R6Eeacg8kGA9lBDg"><img border="0" src="../images//1208293073.jpeg" alt="TENANT_ID"></a><a href="#linkID_KT8V45R6Eeacg8kGA9lBDg">TENANT_ID</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_KT8V55R6Eeacg8kGA9lBDg"><img border="0" src="../images//1208293073.jpeg" alt="FROM_THRESHOLD"></a><a href="#linkID_KT8V55R6Eeacg8kGA9lBDg">FROM_THRESHOLD</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_KT8V6ZR6Eeacg8kGA9lBDg"><img border="0" src="../images//1208293073.jpeg" alt="TO_THRESHOLD"></a><a href="#linkID_KT8V6ZR6Eeacg8kGA9lBDg">TO_THRESHOLD</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_T6xDcDUeEeegQJgrHWbKvQ"><img border="0" src="../images//1208293073.jpeg" alt="INTERVAL_NO"></a><a href="#linkID_T6xDcDUeEeegQJgrHWbKvQ">INTERVAL_NO</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_L7XjgPOtEeaU2-bbBM26Wg"><img border="0" src="../images//1208293073.jpeg" alt="IS_MASTERED_YN"></a><a href="#linkID_L7XjgPOtEeaU2-bbBM26Wg">IS_MASTERED_YN</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_Wln3wPbDEeaQAdrtpTnu5A"><img border="0" src="../images//1208293073.jpeg" alt="IS_PASS_YN"></a><a href="#linkID_Wln3wPbDEeaQAdrtpTnu5A">IS_PASS_YN</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_KT8V5ZR6Eeacg8kGA9lBDg"><img border="0" src="../images//1208293073.jpeg" alt="COLOR_CD"></a><a href="#linkID_KT8V5ZR6Eeacg8kGA9lBDg">COLOR_CD</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_KT8V65R6Eeacg8kGA9lBDg"><img border="0" src="../images//1208293073.jpeg" alt="MASTERY_LEVEL_NAME"></a><a href="#linkID_KT8V65R6Eeacg8kGA9lBDg">MASTERY_LEVEL_NAME</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_KT8V7ZR6Eeacg8kGA9lBDg"><img border="0" src="../images//1208293073.jpeg" alt="MASTERY_LEVEL_TOOL_TIP"></a><a href="#linkID_KT8V7ZR6Eeacg8kGA9lBDg">MASTERY_LEVEL_TOOL_TIP</a></td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="2"><a name="Primary Key ">Primary Key </a></td>
+</tr>
+<tr>
+<td><a href="#linkID_KT8V75R6Eeacg8kGA9lBDg"><img border="0" src="../images//906305097.jpeg" alt="MASTERY_COLOR_LIS1"></a><a href="#linkID_KT8V75R6Eeacg8kGA9lBDg">MASTERY_COLOR_LIS1</a></td>
+</tr>
+</table>
+<p></p>
+<table class="DetailsTable">
+<tr>
+<td class="DetailsTitle" colspan="2"><a name="columnDetail">Column Details</a></td>
+</tr>
+</table>
+<br>
+<span class="ListItem"><img src="../images//1208293073.jpeg">&nbsp;<a name="linkID_KT8V45R6Eeacg8kGA9lBDg">TENANT_ID</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">IBM supplied identifier that uniquely identifies data belonging to a specific district. </td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">VARCHAR(4)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<span class="ListItem"><img src="../images//1208293073.jpeg">&nbsp;<a name="linkID_KT8V55R6Eeacg8kGA9lBDg">FROM_THRESHOLD</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">The bottom end of a range used to determine what color to use for a forecast value.</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">REAL</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<span class="ListItem"><img src="../images//1208293073.jpeg">&nbsp;<a name="linkID_KT8V6ZR6Eeacg8kGA9lBDg">TO_THRESHOLD</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">The top end of a range used to determine what color to use for a forecast value.</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">REAL</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<span class="ListItem"><img src="../images//1208293073.jpeg">&nbsp;<a name="linkID_T6xDcDUeEeegQJgrHWbKvQ">INTERVAL_NO</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">A number that uniquely identies an interval. For example the interval defined by the from threshold of 90.0 and to threshold of 100.0 would be interval 1. </td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">SMALLINT</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<span class="ListItem"><img src="../images//1208293073.jpeg">&nbsp;<a name="linkID_L7XjgPOtEeaU2-bbBM26Wg">IS_MASTERED_YN</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">A yes/no flag that identifies if the district considers a range demonstrate mastery. If the column is 1 any grade in the range demonstrates mastery and if the column is 0 the grade does not demonstrate mastery. This would be configured at set up.</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">SMALLINT</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<span class="ListItem"><img src="../images//1208293073.jpeg">&nbsp;<a name="linkID_Wln3wPbDEeaQAdrtpTnu5A">IS_PASS_YN</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">A yes/no flag that identifies if the district considers a range a pass. If the column is 1 any grade in the range is a pass and if the column is 0 the grade is not a pass. This would be configured at set up.</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">SMALLINT</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<span class="ListItem"><img src="../images//1208293073.jpeg">&nbsp;<a name="linkID_KT8V5ZR6Eeacg8kGA9lBDg">COLOR_CD</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">A set of prefined colors the client can configure to represent a level of mastery. The UI will use these predefined color values to drive UI behavior. </br></br>The predefined color values are:</br></br>red</br>orange</br>yellow</br>green</br>blue</br>grey</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">VARCHAR(10)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<span class="ListItem"><img src="../images//1208293073.jpeg">&nbsp;<a name="linkID_KT8V65R6Eeacg8kGA9lBDg">MASTERY_LEVEL_NAME</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">The district configured name assigned to color. </td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">VARCHAR(20)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<span class="ListItem"><img src="../images//1208293073.jpeg">&nbsp;<a name="linkID_KT8V7ZR6Eeacg8kGA9lBDg">MASTERY_LEVEL_TOOL_TIP</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">The district configured top tip assigned to color. </td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">VARCHAR(50)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<p></p>
+<table class="DetailsTable">
+<tr>
+<td class="DetailsTitle" colspan="2"><a name="columnDetail">Primary Key Details</a></td>
+</tr>
+</table>
+<br>
+<span class="ListItem"><img src="../images//906305097.jpeg">&nbsp;<a name="linkID_KT8V75R6Eeacg8kGA9lBDg">MASTERY_COLOR_LIS1</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Member</b></td><td class="PropertyValue">TENANT_ID [VARCHAR(4)]</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Member</b></td><td class="PropertyValue">FROM_THRESHOLD [REAL]</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Member</b></td><td class="PropertyValue">TO_THRESHOLD [REAL]</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="_5pLEsfqJEeW8lIw2IUNpGA-top-summary.html">Database</a></td><td class="NavBarMainLink"><a href="_BWRVEfzAEeWpH4UmpL0_FwInsightDataCollection-content.html">Schema</a></td><td class="NavBarMainHighlight">Table</td>
+</tr>
+</table>
+</td><td class="NavBarRight">WEDC Data Model</td>
+</tr>
+</table>
+</body>
+</html>

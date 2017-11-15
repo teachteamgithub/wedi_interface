@@ -1,0 +1,64 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>WEDC Data Model</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<meta name="description" content="Contents of WEDC published to HTML">
+<link href="WebPublish.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Home Page</a></td><td class="NavBarMainHighlight">File Format</td>
+</tr>
+</table>
+</td><td class="NavBarRight">WEDI Interface</td>
+</tr>
+</table>
+<hr>
+<p></p>
+
+<h3> File and Data Type Specification</h3> 
+<a> This page describes the format specifications of the files and data types. The formats of the files, names, data types are to be implemented as specified, for a successful Watson Classroom data integration. Files will be rejected if the specifications are not followed as listed below. 
+ </a>   
+     
+ 
+<table  style="border-style: solid">
+    
+    <tr style="background-color: lightgray"><td>Specification</td><td>Explanation</td></tr>
+    
+    
+    <tr><td>Header Rows</td><td>Include headers exactly as indicated in data dictionary, sample-input tables. Each column name should be double-quoted, comma-separated.</td></tr>
+    
+    <tr  style="background-color: antiquewhite"><td>Comma-separated variable.</td><td>Each attribute is separated by commas. </td></tr>
+    
+    <tr><td>Column order.</td><td>Record attributes in input files must follow the sequence represented in the sample-input tables. All attributes (or columns) must be accounted for. This includes columns for which no data are available.</td></tr>
+    
+    <tr style="background-color: antiquewhite"><td> UTF-8 file encoding.</td><td>Files must conform to UTF-8 encoding specification (http://unicode.org/resources/utf8.html). Microsoft Windows applications tend to conform by default. Other OS platforms (e.g., Mac OS-X) employ other default specifications. Data handled on a Mac might need to be coerced into UTF-8 format.</td></tr>
+    
+    <tr><td>Character format.</td><td>Exclusively takes character inputs. Integers, numerics, and dates must be coerced into character strings.</td></tr>
+    
+    <tr style="background-color: antiquewhite"><td>Record termination.</td><td>Each record — a distinct line in the csv file — must be terminated in a carriage-return/linefeed (eol = "\r\n") (https://msdn.microsoft.com/en-us/library/ms191485.aspx). </td></tr>
+    
+    <tr><td>Quotation marks around each attribute.</td><td>All strings must be surrounded by quotation marks (U+0022) (http://www.fileformat.info/info/unicode/char/0022/index.htm).</td></tr>
+    
+    <tr style="background-color: antiquewhite"><td>String-length conformity.</td><td>The length of character strings across input files must be consistent. This is particularly important for integer values coerced into character strings. For example, if an integer attribute includes leading zeros, the leading zeros must be included in every instance of that attribute in each table.</td></tr>
+    
+    <tr><td>Empty fields.</td><td>Empty fields — records for which specific attributes are unavailable — must be included in the csv file. They are separated by commas and double-quoted (e.g. ,””,).</td></tr>
+    
+    <tr style="background-color: antiquewhite"><td>Date formats.</td><td>ALL Dates must be converted to character strings. Date formats for each date-related attribute are indicated in the data dictionary and it should be in format of YYYY-MM-DD</td></tr>
+    
+    <tr><td>Time Formats</td><td>Time must be in 24 hour format (HH:MM)</td></tr>
+    
+    </table>
+   
+  
+
+
+ 
+</body>
+</html>

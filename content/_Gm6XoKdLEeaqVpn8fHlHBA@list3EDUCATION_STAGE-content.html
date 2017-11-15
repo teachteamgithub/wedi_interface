@@ -1,0 +1,265 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>WEDC Data Model</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link href="WebPublish.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Home Page</a></td><td class="NavBarMainHighlight">File Layout</td>
+</tr>
+</table>
+</td><td class="NavBarRight">WEDI Interface</td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName"></span>
+<br>
+<span class="ElementTitle">Table @list:EDUCATION_STAGE</span>
+<p></p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">The grade level defined by a country and possibly state/province. </br></br>The district should be consulted as to what names are used when referring to grades.  If the disctrict does not have a source for grade level, this file would be created as a flat file  and maintained by data collection team. Once the initial creation is done not a lot of change is expected. </br></br>Reference article on values used around the world for grade level: https://en.wikipedia.org/wiki/Educational_stage.</br></br>Sample:</br>ISO_3166_2_COUNTRY_CD: CA-ON</br>EDUCATION_STAGE: Grade 8</br>SCHOOL_STAGE: Elementary</br></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Created</b></td><td class="PropertyValue">R1.2</td>
+</tr>
+</table>
+<p></p>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="2"><a name="Columns">Columns</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_zYJAMKdLEeaqVpn8fHlHBA"><img border="0" src="../images//1208293073.jpeg" alt="ISO_3166_2_COUNTRY_CD"></a><a href="#linkID_zYJAMKdLEeaqVpn8fHlHBA">ISO_3166_2_COUNTRY_CD</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_zYJANKdLEeaqVpn8fHlHBA"><img border="0" src="../images//1208293073.jpeg" alt="EDUCATION_STAGE"></a><a href="#linkID_zYJANKdLEeaqVpn8fHlHBA">EDUCATION_STAGE</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_zYPG0KdLEeaqVpn8fHlHBA"><img border="0" src="../images//1208293073.jpeg" alt="SCHOOL_STAGE"></a><a href="#linkID_zYPG0KdLEeaqVpn8fHlHBA">SCHOOL_STAGE</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_ujkMAKdNEeaqVpn8fHlHBA"><img border="0" src="../images//1208293073.jpeg" alt="DATA_AS_OF_DATE"></a><a href="#linkID_ujkMAKdNEeaqVpn8fHlHBA">DATA_AS_OF_DATE</a></td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="2"><a name="Primary Key ">Primary Key </a></td>
+</tr>
+<tr>
+<td><a href="#linkID_0QN3sKdLEeaqVpn8fHlHBA"><img border="0" src="../images//906305097.jpeg" alt="@list:EDUCATION_S1"></a><a href="#linkID_0QN3sKdLEeaqVpn8fHlHBA">@list:EDUCATION_S1</a></td>
+</tr>
+</table>
+<p></p>
+<table class="DetailsTable">
+<tr>
+<td class="DetailsTitle" colspan="2"><a name="columnDetail">Column Details</a></td>
+</tr>
+</table>
+<br>
+<span class="ListItem"><img src="../images//1208293073.jpeg">&nbsp;<a name="linkID_zYJAMKdLEeaqVpn8fHlHBA">ISO_3166_2_COUNTRY_CD</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">The 5 character ISO code that identifies the major subsivisions within a country. . This code had to be used for countries like Canada and Austrailia where the grade levels differ between provinces/states. In the case where the grade level is named consistently across geographies, the province/state of the district should be used for the second portion of the code. </br></br>For example, Ontario which is a province in Canada is 'CA-ON' and California which is a state in the United States is 'US-CA'</br></br></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Business Key</b></td><td class="PropertyValue">yes</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Created</b></td><td class="PropertyValue">R1.2</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">VARCHAR(5)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<span class="ListItem"><img src="../images//1208293073.jpeg">&nbsp;<a name="linkID_zYJANKdLEeaqVpn8fHlHBA">EDUCATION_STAGE</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">The name used by the country to describe the grade level. </br></br>For example, school in Canada tyically progresses from Kindergarten to grade 12 while in the United States a learner progresses from First Grade to Twelfth grade or Senior year.</br></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Business Key</b></td><td class="PropertyValue">yes</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Created</b></td><td class="PropertyValue">R1.2</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">VARCHAR(20)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<span class="ListItem"><img src="../images//1208293073.jpeg">&nbsp;<a name="linkID_zYPG0KdLEeaqVpn8fHlHBA">SCHOOL_STAGE</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">The stage or group an education stage is placed. </br></br>For example, in Canada in Alberta grade 7 is considered to be part of Junior High while in Ontario grade  is considered to be Elementary school. </td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Created</b></td><td class="PropertyValue">R1.2</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">VARCHAR(20)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<span class="ListItem"><img src="../images//1208293073.jpeg">&nbsp;<a name="linkID_ujkMAKdNEeaqVpn8fHlHBA">DATA_AS_OF_DATE</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">Date this data set was created, format: YYYY-MM-DD</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">TIMESTAMP</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<p></p>
+<table class="DetailsTable">
+<tr>
+<td class="DetailsTitle" colspan="2"><a name="columnDetail">Primary Key Details</a></td>
+</tr>
+</table>
+<br>
+<span class="ListItem"><img src="../images//906305097.jpeg">&nbsp;<a name="linkID_0QN3sKdLEeaqVpn8fHlHBA">@list:EDUCATION_S1</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Member</b></td><td class="PropertyValue">ISO_3166_2_COUNTRY_CD [VARCHAR(5)]</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Member</b></td><td class="PropertyValue">EDUCATION_STAGE [VARCHAR(20)]</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="_5pLEsfqJEeW8lIw2IUNpGA-top-summary.html">Database</a></td><td class="NavBarMainLink"><a href="_BWRVEfzAEeWpH4UmpL0_FwInsightDataCollection-content.html">Schema</a></td><td class="NavBarMainHighlight">Table</td>
+</tr>
+</table>
+</td><td class="NavBarRight">WEDC Data Model</td>
+</tr>
+</table>
+</body>
+</html>
