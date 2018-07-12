@@ -26,24 +26,28 @@
  
 <table  style="border-style: solid" >
     
-    
+
     
     
     <tr><td> <a style="color:dodgerblue">How is STG_SIH_CLASS_SCHEDULE.Class_Id to be populated? </a><br> <br> STG_SIH_CLASS_SCHEDULE.Class_Id is a unique identifier to identify a Course Section. A Course Section can span a year or a term. For each unique Class_Id the Application will break out a Class_Card. If the district does not want to break out class cards by semester for a Course, a unique Class_id needs to be provided across terms.   </td> </tr>
     
-    <tr  style="background-color: antiquewhite"><td> <a style="color:dodgerblue">What if start and end time for a class is not entered in the System by the teacher?</a><br> <br> In this scenario we would ask the Data Admin to put in a place holder time and communicate to teachers to put in the actual start and end time</td></tr>
+   <tr  style="background-color: antiquewhite"><td> <a style="color:dodgerblue">How to define class card title? </a><br> <br> We reccomend to populate STG_SIH_CLASS_SCHEDULE.COURSE_SECTION_TITLE with a value which will distinctively identify a class and also allow a meanigful sort/group. Also consider what the teachers are used to seeing as Class names in their SIS, Gradebook or LMS system. The default sort order is alphabetical. A reccomended nomenclature -> Period + ' '+ Course Title+ ' ' + Section + ' ' + Term </td></tr>
     
-     <tr><td> <a style="color:dodgerblue">What Days do I need to populate SCHOOL_CALENDAR?</a> <br><br>  By School, all days should have a unique record including Holidays, Weekends and Off days. </td></tr>
     
-    <tr  style="background-color: antiquewhite"><td><a style="color:dodgerblue">Will Watson upload a file if some of the records have Schema issues?</a><br><br>  No. The file cannot be loaded unless all the records pass the schema validation test. </td></tr>
     
-    <tr><td><a style="color:dodgerblue">Are all the files required for the Application to Work?</a><br> <br>  No. While we strongly reccomend all files to be provided, we understand the limitations of data availability either due to Privacy concerns or lack of data in certain areas. The system will work if non-essential files are not provided. This needs to be reviewed and approved by the stakeholders. </td></tr>
+    <tr><td> <a style="color:dodgerblue">What if start and end time for a class is not entered in the System by the teacher?</a><br> <br> In this scenario we would ask the Data Admin to put in a place holder time and communicate to teachers to put in the actual start and end time</td></tr>
     
-     <tr style="background-color: antiquewhite"><td><a style="color:dodgerblue">Are all the files required for running the validation?</a><br><br>  No. The district can provide a partial list of files. The validation will call out the missing files. Please note this is applicable only during the initial onboarding phase. </td></tr>
+     <tr  style="background-color: antiquewhite"><td> <a style="color:dodgerblue">What Days do I need to populate SCHOOL_CALENDAR?</a> <br><br>  By School, all days should have a unique record including Holidays, Weekends and Off days. </td></tr>
     
-      <tr><td><a style="color:dodgerblue">If the district does not have data for a non-essential file what do we do?</a><br> <br> In this scenario, the district needs to provide an empty file with the row headers. </td></tr>
+    <tr ><td><a style="color:dodgerblue">Will Watson upload a file if some of the records have Schema issues?</a><br><br>  No. The file cannot be loaded unless all the records pass the schema validation test. </td></tr>
     
-    <tr style="background-color: antiquewhite"><td><a style="color:dodgerblue"> Our District does not   have Roles like 'Superitendent', 'Teachers' and 'Principal' in system. If we send the Job Role will Watson be able to identify the Application roles?</a> <br> <br>  Yes to a certain extent.  We do parse the Job Desc to identify the Application Role. Eg: 'Middle School Principal' will be assigned a 'Principal' Role whereas 'SpEd Co-ordinator' may not be mapped. We reccomend that District applies the rules to provide the application roles for optimal behavior. </td></tr>
+    <tr  style="background-color: antiquewhite" ><td><a style="color:dodgerblue">Are all the files required for the Application to Work?</a><br> <br>  No. While we strongly reccomend all files to be provided, we understand the limitations of data availability either due to Privacy concerns or lack of data in certain areas. The system will work if non-essential files are not provided. This needs to be reviewed and approved by the stakeholders. </td></tr>
+    
+     <tr><td><a style="color:dodgerblue">Are all the files required for running the validation?</a><br><br>  No. The district can provide a partial list of files. The validation will call out the missing files. Please note this is applicable only during the initial onboarding phase. </td></tr>
+    
+      <tr  style="background-color: antiquewhite"><td><a style="color:dodgerblue">If the district does not have data for a non-essential file what do we do?</a><br> <br> In this scenario, the district needs to provide an empty file with the row headers. </td></tr>
+    
+    <tr><td><a style="color:dodgerblue"> Our District does not   have Roles like 'Superitendent', 'Teachers' and 'Principal' in system. If we send the Job Role will Watson be able to identify the Application roles?</a> <br> <br>  Yes to a certain extent.  We do parse the Job Desc to identify the Application Role. Eg: 'Middle School Principal' will be assigned a 'Principal' Role whereas 'SpEd Co-ordinator' may not be mapped. We reccomend that District applies the rules to provide the application roles for optimal behavior. </td></tr>
     </table>
    
   
