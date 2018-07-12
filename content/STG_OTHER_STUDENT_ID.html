@@ -1,0 +1,293 @@
+
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>WEDC Data Model</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link href="WebPublish.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="_5pLEsfqJEeW8lIw2IUNpGA-top-summary.html">Database</a></td><td class="NavBarMainLink"><a href="_BWRVEfzAEeWpH4UmpL0_FwInsightDataCollection-content.html">Schema</a></td><td class="NavBarMainHighlight">Table</td>
+</tr>
+</table>
+</td><td class="NavBarRight">WEDC Data Model</td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName"></span>
+<br>
+<span class="ElementTitle">Table STG_OTHER_STUDENT_ID</span>
+<p></p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">Used by the onboarding team  to cross reference and look up student district identifiers for identifiers issued by state, federal and college board. </td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Implemented</b></td><td class="PropertyValue">R2.6</td>
+</tr>
+</table>
+<p></p>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="2"><a name="Columns">Columns</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_YYmHsWJ8EeiA0oS2UOyxUg"><img border="0" src="../images//-1213825112.jpeg" alt="DISTRICT_STUDENT_ID"></a><a href="#linkID_YYmHsWJ8EeiA0oS2UOyxUg">DISTRICT_STUDENT_ID</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_YYmHtmJ8EeiA0oS2UOyxUg"><img border="0" src="../images//-1213825112.jpeg" alt="AGENCY"></a><a href="#linkID_YYmHtmJ8EeiA0oS2UOyxUg">AGENCY</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_YYmHuGJ8EeiA0oS2UOyxUg"><img border="0" src="../images//-1213825112.jpeg" alt="OTHER_STUDENT_ID"></a><a href="#linkID_YYmHuGJ8EeiA0oS2UOyxUg">OTHER_STUDENT_ID</a></td>
+</tr>
+<tr>
+<td><a href="#linkID_YYmHumJ8EeiA0oS2UOyxUg"><img border="0" src="../images//-1213825112.jpeg" alt="DATA_AS_OF_DATE"></a><a href="#linkID_YYmHumJ8EeiA0oS2UOyxUg">DATA_AS_OF_DATE</a></td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="2"><a name="Primary Key ">Primary Key </a></td>
+</tr>
+<tr>
+<td><a href="#linkID_YYmHvGJ8EeiA0oS2UOyxUg"><img border="0" src="../images//1269184520.jpeg" alt="STG_AUX_STUDENT_I1"></a><a href="#linkID_YYmHvGJ8EeiA0oS2UOyxUg">STG_AUX_STUDENT_I1</a></td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="2"><a name="Indexes ">Indexes </a></td>
+</tr>
+<tr>
+<td><a href="#linkID_p0fPcGJ_EeiA0oS2UOyxUg"><img border="0" src="../images//-962198989.jpeg" alt="STG_OTHER_STUDENT_ID_DISTRICT_STUDENT_ID_STUDENT_ID_SOURCE_IDX"></a><a href="#linkID_p0fPcGJ_EeiA0oS2UOyxUg">STG_OTHER_STUDENT_ID_DISTRICT_STUDENT_ID_STUDENT_ID_SOURCE_IDX</a></td>
+</tr>
+</table>
+<p></p>
+<table class="DetailsTable">
+<tr>
+<td class="DetailsTitle" colspan="2"><a name="columnDetail">Column Details</a></td>
+</tr>
+</table>
+<br>
+<span class="ListItem"><img src="../images//-1213825112.jpeg">&nbsp;<a name="linkID_YYmHsWJ8EeiA0oS2UOyxUg">DISTRICT_STUDENT_ID</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">Unique source system identifier  for the student.</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Source</b></td><td class="PropertyValue">STAR: StudentLocalID: Student's ID number in Renaissance Place</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Target</b></td><td class="PropertyValue">lookup value for EVIDENCE_OF_LEARNING.SIH_PERSONPK_ID_ST</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">VARCHAR(250)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<span class="ListItem"><img src="../images//-1213825112.jpeg">&nbsp;<a name="linkID_YYmHtmJ8EeiA0oS2UOyxUg">AGENCY</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">The state or agency that issued the student identifier. </td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">VARCHAR(50)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<span class="ListItem"><img src="../images//-1213825112.jpeg">&nbsp;<a name="linkID_YYmHuGJ8EeiA0oS2UOyxUg">OTHER_STUDENT_ID</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">A unique number or alphanumeric code assigned to a person by a state, or other agency or entity.</br></br>[CEDS person Identifier]</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">VARCHAR(40)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<span class="ListItem"><img src="../images//-1213825112.jpeg">&nbsp;<a name="linkID_YYmHumJ8EeiA0oS2UOyxUg">DATA_AS_OF_DATE</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Description</b></td><td class="PropertyValue">Date this data set was created, format: YYYY-MM-DD</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Data Type</b></td><td class="PropertyValue">TIMESTAMP</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Primary Key</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Identity</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Nullable</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Generated</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Row Change Timestamp</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is hidden</b></td><td class="PropertyValue">false</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<p></p>
+<table class="DetailsTable">
+<tr>
+<td class="DetailsTitle" colspan="2"><a name="columnDetail">Primary Key Details</a></td>
+</tr>
+</table>
+<br>
+<span class="ListItem"><img src="../images//1269184520.jpeg">&nbsp;<a name="linkID_YYmHvGJ8EeiA0oS2UOyxUg">STG_AUX_STUDENT_I1</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Member</b></td><td class="PropertyValue">DISTRICT_STUDENT_ID [VARCHAR(250)]</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Member</b></td><td class="PropertyValue">AGENCY [VARCHAR(50)]</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<p></p>
+<table class="DetailsTable">
+<tr>
+<td class="DetailsTitle" colspan="2"><a name="columnDetail">Index Details</a></td>
+</tr>
+</table>
+<br>
+<span class="ListItem"><img src="../images//-962198989.jpeg">&nbsp;<a name="linkID_p0fPcGJ_EeiA0oS2UOyxUg">STG_OTHER_STUDENT_ID_DISTRICT_STUDENT_ID_STUDENT_ID_SOURCE_IDX</a></span>
+<dl>
+<dd>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1" width="90%">
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Clustered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Member</b></td><td class="PropertyValue">DISTRICT_STUDENT_ID [VARCHAR(250)]  Ascending</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Member</b></td><td class="PropertyValue">AGENCY [VARCHAR(50)]  Ascending</td>
+</tr>
+</table>
+<p></p>
+</dd>
+</dl>
+<hr>
+<br>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="_5pLEsfqJEeW8lIw2IUNpGA-top-summary.html">Database</a></td><td class="NavBarMainLink"><a href="_BWRVEfzAEeWpH4UmpL0_FwInsightDataCollection-content.html">Schema</a></td><td class="NavBarMainHighlight">Table</td>
+</tr>
+</table>
+</td><td class="NavBarRight">WEDC Data Model</td>
+</tr>
+</table>
+</body>
+</html>
