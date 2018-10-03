@@ -28,34 +28,46 @@
 Contact information: Ajay Gopinath, Watson Classroom Data Lead, agopinath@us.ibm.com></h5> 
 
 <h4>Welcome to the Watson Classroom Data Interface Specification!!<br><br>
-SIS Specialists, Data Speciaists or IBM Partners can use these pages to understand the Watson Classroom Data Interface requirements. This page provides an overview the all the data categories needed to onboard Watson Classroom application. 
+SIS Specialists, Data Speciaists or IBM Partners can use these pages to understand the Watson Classroom Data Interface requirements. 
+This page provides an overview the all the data categories needed to onboard Watson Classroom application. The table below provides a recommended order the district can provision the data for a streamlined go live.
  </h4>   
-<h3> Data Requirement Overview</h3>      
+<h3> Data Requirement Overview</h3>     
+
+  <tr> <td> <a style="color:blue"> Order of Data Provisioning and uploads, to enable a logical progression of Watson Classoom playbacks </a> </td> </tr>  
+  
  <table style="border-style:ridge"  >
-     <tr style="background-color: darkgray"><td>Application Module</td><td>Source Type</td></tr>  
+     <tr style="background-color: darkgray"><td>Application Module</td><td>Source Type</td> <td>File List</td></tr>  
 
      <tr><td>Login</td><td>District Staff Information –District Admins, Position, Start Date End Date <br>
 School Staff Information - Teachers, School Admins, Location, Start Date, End Date<br>
-School Information – Schools, School Calendar</td></tr>
+School Information – Schools, School Calendar</td> <td> All Files under  <span class="ClassesTableHeading" style="color:brown" >'One Time Configuration Files' </span> <br> AND <br> 
+STG_SIH_ORGANIZATION_DETAIL.csv,
+STG_SIH_PERSON.csv, 
+STG_SIH_ORGPERSONROLE.csv </td></tr>
    
   <tr style="background-color: antiquewhite"><td>Class Cards</td><td> Staff Information - Schedules <br>
 Student Information – Enrollment, Attendance, Roster, Demographic<br>
-      Configuration Files - Letter Grades, Colors etc</td> </tr>   
-     <tr ><td>Gradebook Widgets</td><td>Gradebook activities and grades – Classwork, Homework, Test, Quizzes, Scores</td></tr>    
-      <tr  style="background-color: antiquewhite"><td>Standards</td><td> Standards - Code, Descriptions, Progressions <br> 
-              Standards and Course to Standard Mapping – Common Core / Course <->Standards</td></tr>   
-     <tr><td>Mastery</td><td>Standard Aligned Assessments – District, Interim, State</td></tr>     
-     <tr style="background-color: antiquewhite"><td>Element Announcements</td><td>School/District Announcements</td></tr>   
-     <tr><td>Student Profile - Contacts</td><td>Contact Information – Student Contact/Relationship Information</td></tr>     
-      <tr  style="background-color: antiquewhite"><td>Student Profile-Designation</td><td>Health, Allergies, Special Ed, ELL, Gifted, custom </td></tr>   
-      <tr ><td>Photos</td><td>Photos of Student, Teachers, Principal etc </td></tr>   
+      Configuration Files - Letter Grades, Colors etc</td> <td> 
+STG_SIH_COURSE,
+STG_SIH_CLASS_SCHEDULE,
+STG_SIH_CLASS_ROSTER, STUDENT_ASSESSMENT.csv , STG_SIH_K12ACADRECORD.csv   </td> </tr>   
+     <tr ><td>Gradebook Widgets</td><td>Gradebook activities and grades – Classwork, Homework, Test, Quizzes, Scores</td> <td> 
+STUDENT_TEST_ASSESSMENT.csv   </td></tr>    
+      <tr  style="background-color: antiquewhite"><td>Standards<a style="color:blue">(*M) -> </a> </td><td> Standards - Code, Descriptions, Progressions <br> 
+              Standards and Course to Standard Mapping – Common Core / Course <->Standards</td><td> IBM Uploaded. District needs to work with IBM or the Deployment Partner to make sure the District Learning Standards and Course Blueprints are uploaded</td></tr>   
+     <tr><td>Mastery <a style="color:blue">(*M) -> </a> </td><td>Standard Aligned Assessments – District, Interim, State</td> <td> Files under section <span class="ClassesTableHeading" style="color:brown" > 'Mastery and Evidence of Learning  ' </span> </td></tr>     
+     <tr style="background-color: antiquewhite"><td>Element Announcements</td><td>School/District Announcements</td> <td>  STG_SIH_ANNOUNCEMENT.csv   </td>    </tr>   
+     <tr><td>Student Profile - Contacts</td><td>Contact Information – Student Contact/Relationship Information</td> <td> STG_SIH_PERSON_DEMGRAPHY.csv, STG_SIH_PERSON_RELATIONSHIP.csv, STG_SIH_PERSON_EMAIL.csv,  STG_SIH_PERSON_ADDRESS.csv, STG_SIH_PERSON_TELEPHONE.csv    </td> </tr>     
+      <tr  style="background-color: antiquewhite"><td>Student Profile-Designation</td><td>Health, Allergies, Special Ed, ELL, Gifted, custom </td> <td> STG_SIH_PERSON_HEALTH.csv, STG_SIH_OTHER_HEALTH_AND_DESIGNATIONS.csv    </td> </tr>   
+      <tr ><td>Photos</td><td>Photos of Student, Teachers, Principal etc </td> <td> Please review the mechanism with IBM or Deployment Partner </td></tr>   
        <tr style="background-color: antiquewhite"><td><a style="color:blue"> NEW!!</a> Student Profile - Norm Assessments
 </td><td>NWEA, FSA, ACT, SAT etc.. 
- </td></tr>   
-     
+ </td> <td> Files under section <span class="ClassesTableHeading" style="color:brown" > 'Norm Assessments ' </span>. Please review with your data contact to get more clarification   </td> </tr>   
+     <tr ><td>Student Profile - Addl. Info </td><td>Service Hours, Technology access </td> <td> STG_SIH_STUDENT_SERVICE_HOURS.csv, STG_SIH_PERSON_TECHACCESS.csv  </td></tr>   
+       
+   </table>        
+  <tr> <td> <a style="color:blue">(*M) -> </a>These modules are tied to Mastery and Content. Although there is dependency in the application before Mastery can be surfaced, these data items needs to be worked in parallel from the time project is kicked off </td> </tr>  
     
-    </table>        
-   
  
 
      
